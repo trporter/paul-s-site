@@ -23,7 +23,7 @@ class PaintingsController < ApplicationController
   end
 
   def index
-    @paintings = Paintings.order("name ASC")
+    @paintings = Painting.order("name ASC")
   end
 
   def edit

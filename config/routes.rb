@@ -4,6 +4,9 @@ Rails.application.routes.draw do
 
   resources :collections
 
-  resources :paintings 
+  resources :paintings
+
+  get "/about" => "home#about"
+  root 'home#index'
 
 end
